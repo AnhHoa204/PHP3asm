@@ -34,9 +34,7 @@
                 <h4>{{ Str::limit($item->title, 25) }}</h4>
             </a>
             <p class=" text-black-50 mb-0">{{ Str::limit($item->short_content, 100) }}</p>
-            <p class=" text-black-50 mb-0">Chủ đề: {{ $item->category->name}}</p>
-            <i class="text-decoration-none text-black-50"> - Ngày đăng: {{ $item->created_at->format('Y-m-d') }} <br> - Lượt xem:
-                {{ $item->views }}</i><br>
+            
 
         </div>
     @endforeach
